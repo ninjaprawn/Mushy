@@ -1,0 +1,31 @@
+﻿<Window x:Class="Mushy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mushy"
+        mc:Ignorable="d"
+        Title="Mushy" Height="660" Width="570" Icon="Resources/mushy.ico" ResizeMode="CanMinimize">
+    <StackPanel Margin="0">
+        <StackPanel Height="100" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image x:Name="image" Width="100" Source="Resources/mushy.png"/>
+            <Viewbox Width="200">
+                <StackPanel Width="163" Margin="0,10" HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Mushy" FontSize="36" VerticalAlignment="Center" TextAlignment="Center"/>
+                    <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="MapleStory 2 Launcher" FontSize="14" VerticalAlignment="Center" TextAlignment="Center"/>
+                </StackPanel>
+            </Viewbox>
+        </StackPanel>
+        <Viewbox Height="40"/>
+        <Grid x:Name="accountGrid" Height="492">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </StackPanel>
+</Window>
